@@ -3,11 +3,13 @@ package com.cps.doorbell.model;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.util.DefaultPrettyPrinter;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.springframework.web.multipart.MultipartFile;
 
-import java.io.File;
+import java.io.*;
 
 public class DoorBellApplication {
 	private static String LOCATION_FILE_NAME = "location.json";
+	private static String IMAGE_FILE_NAME = "main.jpg";
 	private static DoorBellApplication single_instance = null;
 
 	public static DoorBellApplication getInstance() {
@@ -35,5 +37,23 @@ public class DoorBellApplication {
 			e.printStackTrace();
 		}
 		return location;
+	}
+
+	public void updateImage(MultipartFile image) {
+		try {
+			FileOutputStream imageWriter = new FileOutputStream(IMAGE_FILE_NAME);
+			imageWriter.write(image.getBytes());
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public byte[] getImage() {
+		try {
+			return new FileInputStream(IMAGE_FILE_NAME).readAllBytes();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return null;
 	}
 }
