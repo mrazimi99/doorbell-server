@@ -10,6 +10,6 @@ RUN mvn -f /home/app/pom.xml clean package
 # Package stage
 #
 FROM openjdk:11-jre-slim
-COPY --from=build /home/app/target/bolbolestan-1.0.jar /usr/local/lib/bolbolestan.jar
-EXPOSE 8080
-ENTRYPOINT ["java","-jar","/usr/local/lib/bolbolestan.jar"]
+COPY --from=build /home/app/target/Doorbell-Server-1.0.jar /usr/local/lib/Doorbell-Server.jar
+EXPOSE 80
+ENTRYPOINT ["java","-jar","/usr/local/lib/Doorbell-Server.jar"]
