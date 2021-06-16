@@ -1,7 +1,6 @@
 package com.cps.doorbell.service;
 
 import com.cps.doorbell.model.DoorBellApplication;
-import com.cps.doorbell.model.Location;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;

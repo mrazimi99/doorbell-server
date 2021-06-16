@@ -3,6 +3,7 @@ package com.cps.doorbell.model;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.util.DefaultPrettyPrinter;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.*;
@@ -10,6 +11,7 @@ import java.io.*;
 public class DoorBellApplication {
 	private static String LOCATION_FILE_NAME = "location.json";
 	private static String IMAGE_FILE_NAME = "main.jpg";
+	private static String IS_AVAILABLE_FILE_NAME = "available.json";
 	private static DoorBellApplication single_instance = null;
 
 	public static DoorBellApplication getInstance() {
@@ -43,6 +45,7 @@ public class DoorBellApplication {
 		try {
 			FileOutputStream imageWriter = new FileOutputStream(IMAGE_FILE_NAME);
 			imageWriter.write(image.getBytes());
+			setImageIsAvailable(true);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -55,5 +58,24 @@ public class DoorBellApplication {
 			e.printStackTrace();
 		}
 		return null;
+	}
+
+	public void setImageIsAvailable(boolean isAvailable) {
+		File booleanFile = new File(IS_AVAILABLE_FILE_NAME);
+		try {
+			new ObjectMapper().writer(new DefaultPrettyPrinter()).writeValue(booleanFile, isAvailable);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public boolean isImageIsAvailable() {
+		boolean isAvailable = false;
+		try {
+			isAvailable = new ObjectMapper().readValue(new File(IS_AVAILABLE_FILE_NAME), Boolean.class);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return isAvailable;
 	}
 }
