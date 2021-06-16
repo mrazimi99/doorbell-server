@@ -6,7 +6,10 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.multipart.MultipartFile;
 
+import javax.servlet.ServletInputStream;
 import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 
 public class DoorBellApplication {
 	private static String LOCATION_FILE_NAME = "location.json";
@@ -41,11 +44,10 @@ public class DoorBellApplication {
 		return location;
 	}
 
-	public void updateImage(MultipartFile image) {
+	public void updateImage(ServletInputStream image) {
 		try {
-			FileOutputStream imageWriter = new FileOutputStream(IMAGE_FILE_NAME);
-			imageWriter.write(image.getBytes());
-			setImageIsAvailable(true);
+			Files.deleteIfExists(Paths.get(IMAGE_FILE_NAME));
+			Files.copy(image, Paths.get(IMAGE_FILE_NAME));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
