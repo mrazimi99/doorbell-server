@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b49dc2fa-3602-4a30-bd0a-d1a52714e7f6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cps/doorbell/service/GetImageAvailableService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cps/doorbell/service/SetImageAvailableService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cps/doorbell/model/DoorBellApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cps/doorbell/model/DoorBellApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cps/doorbell/service/GetImageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cps/doorbell/service/GetImageService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +100,7 @@
       <option name="presentableId" value="Default" />
       <updated>1623616175368</updated>
       <workItem from="1623616177207" duration="10602000" />
-      <workItem from="1623847945978" duration="1329000" />
+      <workItem from="1623847945978" duration="1767000" />
     </task>
     <servers />
   </component>
