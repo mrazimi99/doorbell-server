@@ -1,20 +1,19 @@
 package com.cps.doorbell.model;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.util.DefaultPrettyPrinter;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.ServletInputStream;
 import java.io.*;
 import java.nio.file.Files;
+import java.nio.file.Path;
 import java.nio.file.Paths;
 
 public class DoorBellApplication {
 	private static String LOCATION_FILE_NAME = "location.json";
 	private static String IMAGE_FILE_NAME = "main.jpg";
 	private static String IS_AVAILABLE_FILE_NAME = "available.json";
+	private static String TEXT_FILE_NAME = "text.txt";
 	private static DoorBellApplication single_instance = null;
 
 	public static DoorBellApplication getInstance() {
@@ -79,5 +78,26 @@ public class DoorBellApplication {
 			e.printStackTrace();
 		}
 		return isAvailable;
+	}
+
+	public void saveText(String text) {
+		try {
+			FileWriter textFile = new FileWriter(TEXT_FILE_NAME);
+			textFile.write(text);
+			textFile.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public String getText() {
+
+		try {
+			return Files.readString(Path.of(TEXT_FILE_NAME));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+		return null;
 	}
 }
