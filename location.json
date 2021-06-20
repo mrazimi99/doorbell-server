@@ -1,5 +1,6 @@
 {
   "x" : "1",
-  "y" : "2",
-  "distance" : "3"
+  "y" : "1",
+  "close" : false,
+  "distance" : "1"
 }

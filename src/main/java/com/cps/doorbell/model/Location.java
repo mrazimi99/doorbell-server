@@ -6,11 +6,14 @@ public class Location {
 	private String x;
 	private String y;
 	private String distance;
+	private boolean isClose;
 
-	public Location(@JsonProperty("x") String x, @JsonProperty("y") String y, @JsonProperty("d") String distance) {
+	public Location(@JsonProperty("x") String x, @JsonProperty("y") String y, @JsonProperty("d") String distance,
+	                @JsonProperty("close") boolean isClose) {
 		this.x = x;
 		this.y = y;
 		this.distance = distance;
+		this.isClose = isClose;
 	}
 
 	public String getX() {
@@ -35,5 +38,13 @@ public class Location {
 
 	public void setDistance(String distance) {
 		this.distance = distance;
+	}
+
+	public boolean isClose() {
+		return isClose;
+	}
+
+	public void setClose(boolean close) {
+		isClose = close;
 	}
 }

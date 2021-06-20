@@ -12,8 +12,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class UpdateLocationService {
 
 	@RequestMapping(value = "location", method = RequestMethod.PUT, produces = MediaType.APPLICATION_JSON_VALUE)
-	public Location updateLocation(@RequestParam(value = "x") String x, @RequestParam(value = "y") String y, @RequestParam(value = "d") String d) {
-		DoorBellApplication.getInstance().updateLocation(x, y, d);
+	public Location updateLocation(@RequestParam(value = "x") String x, @RequestParam(value = "y") String y,
+	                               @RequestParam(value = "d") String d, @RequestParam(value = "close") boolean close) {
+		DoorBellApplication.getInstance().updateLocation(x, y, d, close);
 		return DoorBellApplication.getInstance().getLocation();
 	}
 }
