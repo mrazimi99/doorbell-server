@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b49dc2fa-3602-4a30-bd0a-d1a52714e7f6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cps/doorbell/service/GetTextService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cps/doorbell/service/SendTextService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cps/doorbell/model/DoorBellApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cps/doorbell/model/DoorBellApplication.java" afterDir="false" />
     </list>
@@ -65,19 +63,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="DoorBell" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="Doorbell-Server" />
       <extension name="coverage">
@@ -115,7 +100,8 @@
       <workItem from="1623616177207" duration="10602000" />
       <workItem from="1623847945978" duration="2564000" />
       <workItem from="1623864398492" duration="3611000" />
-      <workItem from="1623933862676" duration="792000" />
+      <workItem from="1623933862676" duration="1975000" />
+      <workItem from="1624167255390" duration="40000" />
     </task>
     <servers />
   </component>

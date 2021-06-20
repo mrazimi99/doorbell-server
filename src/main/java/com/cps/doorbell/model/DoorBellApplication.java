@@ -47,6 +47,7 @@ public class DoorBellApplication {
 		try {
 			Files.deleteIfExists(Paths.get(IMAGE_FILE_NAME));
 			Files.copy(image, Paths.get(IMAGE_FILE_NAME));
+			setImageIsAvailable(true);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
