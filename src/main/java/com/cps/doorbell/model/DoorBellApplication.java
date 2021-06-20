@@ -23,10 +23,10 @@ public class DoorBellApplication {
 		return single_instance;
 	}
 
-	public void updateLocation(String x, String y) {
+	public void updateLocation(String x, String y, String d) {
 		File locationFile = new File(LOCATION_FILE_NAME);
 		try {
-			Location newLocation = new Location(x, y);
+			Location newLocation = new Location(x, y, d);
 			new ObjectMapper().writer(new DefaultPrettyPrinter()).writeValue(locationFile, newLocation);
 		} catch (Exception e) {
 			e.printStackTrace();

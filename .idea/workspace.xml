@@ -6,7 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="b49dc2fa-3602-4a30-bd0a-d1a52714e7f6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/location.json" beforeDir="false" afterPath="$PROJECT_DIR$/location.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cps/doorbell/model/DoorBellApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cps/doorbell/model/DoorBellApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cps/doorbell/model/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cps/doorbell/model/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cps/doorbell/service/UpdateLocationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cps/doorbell/service/UpdateLocationService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +104,8 @@
       <workItem from="1623847945978" duration="2564000" />
       <workItem from="1623864398492" duration="3611000" />
       <workItem from="1623933862676" duration="1975000" />
-      <workItem from="1624167255390" duration="40000" />
+      <workItem from="1624167255390" duration="782000" />
+      <workItem from="1624173946202" duration="738000" />
     </task>
     <servers />
   </component>
