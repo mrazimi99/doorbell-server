@@ -14,6 +14,8 @@ public class DoorBellApplication {
 	private static String IMAGE_FILE_NAME = "main.jpg";
 	private static String IS_AVAILABLE_FILE_NAME = "available.json";
 	private static String TEXT_FILE_NAME = "text.txt";
+	private static String DATE_FILE_NAME = "date.txt";
+	private static String BASE64_IMAGE_FILE_NAME = "bmage.txt";
 	private static DoorBellApplication single_instance = null;
 
 	public static DoorBellApplication getInstance() {
@@ -92,9 +94,48 @@ public class DoorBellApplication {
 	}
 
 	public String getText() {
-
 		try {
 			return Files.readString(Path.of(TEXT_FILE_NAME));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+		return null;
+	}
+
+	public void setDate(String date) {
+		try {
+			FileWriter textFile = new FileWriter(DATE_FILE_NAME);
+			textFile.write(date);
+			textFile.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public String getDate() {
+		try {
+			return Files.readString(Path.of(DATE_FILE_NAME));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+		return null;
+	}
+
+	public void saveBase64Image(String base64_image) {
+		try {
+			FileWriter textFile = new FileWriter(BASE64_IMAGE_FILE_NAME);
+			textFile.write(base64_image);
+			textFile.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public String getBase64Image() {
+		try {
+			return Files.readString(Path.of(BASE64_IMAGE_FILE_NAME));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

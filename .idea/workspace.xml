@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b49dc2fa-3602-4a30-bd0a-d1a52714e7f6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cps/doorbell/service/GetBase64ImageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cps/doorbell/service/GetDateService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cps/doorbell/service/SetBase64ImageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cps/doorbell/service/SetDateService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cps/doorbell/model/DoorBellApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cps/doorbell/model/DoorBellApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cps/doorbell/model/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cps/doorbell/model/Location.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cps/doorbell/service/UpdateLocationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cps/doorbell/service/UpdateLocationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cps/doorbell/service/GetTextService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cps/doorbell/service/GetTextService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +68,17 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DoorBell" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="Doorbell-Server" />
       <extension name="coverage">
@@ -103,7 +118,7 @@
       <workItem from="1623864398492" duration="3611000" />
       <workItem from="1623933862676" duration="1975000" />
       <workItem from="1624167255390" duration="782000" />
-      <workItem from="1624173946202" duration="2286000" />
+      <workItem from="1624173946202" duration="3146000" />
     </task>
     <servers />
   </component>

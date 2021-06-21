@@ -7,10 +7,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class GetTextService {
+public class GetBase64ImageService {
 
-	@RequestMapping(value = "message", method = RequestMethod.GET, produces = MediaType.TEXT_PLAIN_VALUE)
+	@RequestMapping(value = "bmage", method = RequestMethod.GET, produces = MediaType.TEXT_PLAIN_VALUE)
 	public String getLocation() {
-		return DoorBellApplication.getInstance().getText();
+		return DoorBellApplication.getInstance().getBase64Image();
 	}
 }
