@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b49dc2fa-3602-4a30-bd0a-d1a52714e7f6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bmage.txt" beforeDir="false" afterPath="$PROJECT_DIR$/bmage.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cps/doorbell/model/DoorBellApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cps/doorbell/model/DoorBellApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cps/doorbell/service/SetBase64ImageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cps/doorbell/service/SetBase64ImageService.java" afterDir="false" />
     </list>

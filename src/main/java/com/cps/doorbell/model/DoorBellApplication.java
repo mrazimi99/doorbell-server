@@ -16,7 +16,10 @@ public class DoorBellApplication {
 	private static String TEXT_FILE_NAME = "text.txt";
 	private static String DATE_FILE_NAME = "date.txt";
 	private static String BASE64_IMAGE_FILE_NAME = "bmage.txt";
+
 	private static DoorBellApplication single_instance = null;
+	private static String partialImage;
+
 
 	public static DoorBellApplication getInstance() {
 		if (single_instance == null)
@@ -123,13 +126,22 @@ public class DoorBellApplication {
 		return null;
 	}
 
-	public void saveBase64Image(ServletInputStream base64_image) {
-		try {
-			Files.deleteIfExists(Paths.get(BASE64_IMAGE_FILE_NAME));
-			Files.copy(base64_image, Paths.get(BASE64_IMAGE_FILE_NAME));
-			setImageIsAvailable(true);
-		} catch (IOException e) {
-			e.printStackTrace();
+	public void saveBase64Image(String base64_image) throws IOException {
+		if (base64_image.contains("start")) {
+			partialImage = "";
+		}
+		else if (base64_image.contains("end")) {
+			try {
+				FileWriter fileWriter = new FileWriter(BASE64_IMAGE_FILE_NAME);
+				fileWriter.write(partialImage);
+				fileWriter.close();
+				setImageIsAvailable(true);
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+		else {
+			partialImage += base64_image;
 		}
 	}
 
