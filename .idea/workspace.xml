@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b49dc2fa-3602-4a30-bd0a-d1a52714e7f6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cps/doorbell/service/GetBase64ImageService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cps/doorbell/service/GetDateService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cps/doorbell/service/SetBase64ImageService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cps/doorbell/service/SetDateService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cps/doorbell/model/DoorBellApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cps/doorbell/model/DoorBellApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cps/doorbell/service/GetTextService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cps/doorbell/service/GetTextService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cps/doorbell/service/SetBase64ImageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cps/doorbell/service/SetBase64ImageService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

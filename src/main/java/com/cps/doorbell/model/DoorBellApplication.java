@@ -123,11 +123,11 @@ public class DoorBellApplication {
 		return null;
 	}
 
-	public void saveBase64Image(String base64_image) {
+	public void saveBase64Image(ServletInputStream base64_image) {
 		try {
-			FileWriter textFile = new FileWriter(BASE64_IMAGE_FILE_NAME);
-			textFile.write(base64_image);
-			textFile.close();
+			Files.deleteIfExists(Paths.get(BASE64_IMAGE_FILE_NAME));
+			Files.copy(base64_image, Paths.get(BASE64_IMAGE_FILE_NAME));
+			setImageIsAvailable(true);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
